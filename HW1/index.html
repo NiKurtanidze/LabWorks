@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Homework1_1</title>
+	</head>
+    <body>
+        <section>
+            <div>
+            <h1>Gym Membership Form</h1>
+            <img src="/image04.jpeg" alt="Gym pic">
+            <p>Want to become a member of our Gym? Then start filling out our form to complete registration. We will contact you shortly to notify you about your membership card.</p>
+    
+            <br>
+            <form action="/successPage.html">
+                <label>Name</label><br>
+                <input type="text" name="fname" placeholder="First"><br>
+                <input type="text" name="lname" placeholder="Last"><br>
+                <br>
+                <label>Gender</label><br>
+                <input type="radio" name="Sex" value="Female">
+                <label>Female</label>
+                <input type="radio" name="Sex" value="Male">
+                <label>Male</label>
+
+                <br><br>
+
+                <label>Your current weight (lbs)</label><br>
+                <input type="text" name="currentWeight"><br>
+
+                <label>Desired weight (lbs)</label><br>
+                <input type="text" name="desiredWeight"><br>
+
+                <label>Height</label><br>
+                <input type="text" name="height"><br>
+
+                <label>Home Address</label><br>
+                <input type="text" name="address" placeholder="Street address"><br>
+                <input type="text" name="address" placeholder="City"><br>
+                <select class="dropdownMenu" name="country">
+                    <option disabled selected>Country</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="France">France</option>
+                    <option value="Korea">Korea</option>
+                    <option value="other">other</option>
+                </select>
+                <br>
+                <br>
+                <label>Email</label><br>
+                <input type="email" name="email"><br>
+                    <br>
+                <label>Phone</label><br>
+                <input type="tel" name="phoneNumber"><br>
+                <br>
+                <br>
+                <label>Have you been in a Gym before?</label> <br>
+                <input class="form-radio-item" type="radio" name="BeenInGym" value="Yes">
+                <label>Yes</label>
+                <input class="form-radio-item" type="radio" name="BeenInGym" value="No">
+                <label>No</label>
+
+                <br>
+                <label>Membership Type</label> <br>
+                <input type="checkbox" name="Membership" value="Regular">
+                <label>Regular</label>
+                <input type="checkbox" name="Membership" value="Pro">
+                <label>Pro</label>
+                <input type="checkbox" name="Membership" value="VIP">
+                <label>VIP</label>
+
+                <br>
+            <br>
+
+            <label>Add comment</label><br>
+            <textarea class="comment" type="text" for="comment"></textarea>
+            <br>
+			<input class="submit-button" type="submit" value="Apply">
+            </form>
+        </div>
+        </section>
+    </body>
+</html>
