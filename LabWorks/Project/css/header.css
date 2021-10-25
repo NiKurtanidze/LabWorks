@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.header-class{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right,  rgb(0, 0, 0),
+                                                 rgb(15, 14, 19),
+                                                 rgb(43, 32, 58),
+                                                 rgb(141, 74, 158),
+                                                 rgb(175, 60, 156));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    content: url("./images/Logo.png");
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.star-logo{
+    content: url("./images/star.png");
+    height: 100px;
+    position: relative;
+    width: 100px;
+    animation: starLogoMovement 15s linear infinite;
+}
+
+@keyframes starLogoMovement {
+    0%   { right:0px; top:0px;}
+  25%  {right: 150px; top:0px;}
+  50%  {right:250px; top:0px;}
+  75%  {right:150px; top:0px;}
+  100% {right:0px; top:0px;}
+}
+
+header nav{
+    width: 100%;
+    float: right;
+}
+
+header ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+header li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 0;
+    padding-left: 6%;
+}
+
+header a {
+    display: inline-block;
+    color: #7de4df;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;  
+    align-items: center;
+    width: 90px;
+}
+
+.navigation{
+    margin-left: -100px;
+}
+
+header .navigation a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff, 0px 0px 25px #00fff2;
+}
+
+.burger-menu{
+    content: url("./images/BurgerMenu.png");
+    display: none;
+    padding: 11.2px;
+    outline: 1.5px solid rgb(83, 48, 129);
+    background: rgb(229, 214, 230);
+    width: 60px;
+    border: 2px solid rgb(109, 68, 163);
+}
+
+.burger {
+    display: none;
+    padding: 11.2px;
+    border: 1px solid #ffffff;
+    outline: 1.8px solid #3AB6B2;
+    background: #3AB6B2;
+  } 
+
+  @media screen and (max-width: 1119px){
+    header li{
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1040.6px){
+    header li{
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width: 1000.6px){
+    header li{
+        padding-left: 3%;
+    }
+}
+
+@media screen and (max-width: 940.6px){
+    header li{
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 890.6px){
+    header li{
+        padding-left: 1%;
+    }
+}
+
+@media screen and (max-width: 840.4px){
+    header nav {
+        display: none;
+        padding: 30% 0;
+    }
+    .burger-menu {
+        display: block;
+        margin-right: 100px;
+        margin-left: -100px;
+    }
+    @keyframes starLogoMovement {
+        0%   { right:250px; top:0px;}
+      25%  {right: 350px; top:0px;}
+      50%  {right:420px; top:0px;}
+      75%  {right:350px; top:0px;}
+      100% {right:250px; top:0px;}
+    }
+} 
+
+@media screen and (max-width: 530px){
+    @keyframes starLogoMovement {
+        0%   { right:150px; top:0px;}
+      25%  {right: 200px; top:0px;}
+      50%  {right:300px; top:0px;}
+      75%  {right:200px; top:0px;}
+      100% {right:150px; top:0px;}
+    }
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        content: url("./images/Logo.png");
+        display: flex;
+        width: 160px;
+        height: 80px;
+        margin-left: 15px;
+    }
+    .burger-menu {
+        width: 50px;
+        padding: 7px;
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 264px){
+    .logo{
+        width: 120px;
+        height: 60px;
+        margin-left: 10px;
+    }
+    .burger-menu {
+        width: 30px;
+        padding: 4px;
+        margin-right: 30px;
+    }
+    @keyframes starLogoMovement {
+        0%   { right:50px; top:0px;}
+      25%  {right: 150px; top:0px;}
+      50%  {right:200px; top:0px;}
+      75%  {right:150px; top:0px;}
+      100% {right:50px; top:0px;}
+    }
+}
+
