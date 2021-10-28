@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    background-image: radial-gradient( rgb(45, 58, 116),rgb(67, 45, 95), rgb(36, 61, 55));
 }
 
 .header-class{

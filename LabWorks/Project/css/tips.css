@@ -1,0 +1,142 @@
+.tips {
+    position: relative;
+    padding: 83px 0 70px;
+    background-color:#292929b2;
+    width: 100%;
+    text-align: center;
+}
+
+.tips  h3 {
+    color: #c2e9e2;;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tips.title{
+    background-color: #ffffff00;
+}
+
+.tips .icon{
+    margin-left: 47%;
+}
+
+.tips_wrap {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+}
+
+.polygon {
+    position: relative;
+    width: 295px;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.polygon::before {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 133px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.polygon:hover::after {
+    width: 155px;
+    height: 90px;
+}
+
+.polygon::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 58.3px;
+    width: 105px;
+    height: 70px;
+    margin: 0 auto;
+    background-image: url("./images/start.svg");
+    background-repeat: no-repeat;
+}
+
+.polygon.people::after {
+    background-image: url("./images/competition.svg");
+}
+
+.polygon.sales::after {
+    background-image: url("/css/images/maintain.svg");
+}
+
+.polygon_content {
+    text-align: center;
+}
+
+.polygon_content h3 {
+    color: #74c2da;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.polygon_content p {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: .02em;
+    line-height: 22px;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .tips {
+        margin-top: 0%;
+        padding: 9px 0px 1px;
+    }
+    .tips_wrap {
+        margin: -20% 0;
+        display: inline;
+        justify-content: center;
+        padding: 0 4%;
+    }
+
+    .polygon_content {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .polygon {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .polygon::after {
+        left: 32px;
+    }
+    
+    .tips .icon{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .tips_wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1252px;
+    }
+}
+
+

@@ -10,7 +10,7 @@
 }
 
 .genres_h3 {
-    color: #323232;
+    color: #c2e9e2;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -50,13 +50,18 @@
 
 .photo.big {
     display: flex;
+    grid-column: span 1;
+    }
+
+.photo.big {
+    display: flex;
     grid-column: span 2;
     }
 
-    .photo.huge {
-        display: flex;
-        grid-column: span 4;
-        }
+.photo.huge {
+    display: flex;
+    grid-column: span 3;
+    }
 
 .photo:hover .appear {
     display: block;
