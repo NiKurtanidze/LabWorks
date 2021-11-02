@@ -1,0 +1,14 @@
+{
+  "name": "js_hw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "first": "node hw1.js",
+    "second": "node hw2.js",
+    "third": "node hw3.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
