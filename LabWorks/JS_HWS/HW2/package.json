@@ -4,6 +4,7 @@
   "description": "",
   "main": "fourth.js",
   "scripts": {
+    "smt": "node smt.js",
     "fourth": "node fourth.js",
     "fifth": "node fifth.js",
     "sixth": "node sixth.js",
