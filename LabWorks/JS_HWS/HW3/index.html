@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <script>
+  function myFunction() {
+    document.getElementById("value-input").value = "";
+
+    let firstDiv = document.getElementById("first-div");
+    let secondDiv = document.getElementById("second-div")
+    let deleteAllButton = document.createElement("button");
+    let deleteAllDiv = document.createElement("div");
+    let x = document.getElementById("value-input").value;
+    let btn = document.createElement("BUTTON");
+    let child = document.createElement("div");
+
+    setAttributes(deleteAllButton, {'class': `delete-all-button`, "id": "delete-all"})
+    setAttributes(deleteAllDiv, {'class': `delete-all`})
+    setAttributes(btn, {'class':  `item ${x}`})
+    setAttributes(child, {'class': `child-class`})
+
+
+    deleteAllDiv.innerHTML = x;
+    deleteAllButton.appendChild(deleteAllDiv);
+
+    child.innerHTML = x;
+    btn.appendChild(child);
+    
+    firstDiv.appendChild(btn);
+    deleteAll();
+
+    function deleteAll(){
+        if(document.getElementsByClassName(`item ${x}`).length != 0
+            && document.getElementsByClassName("delete-all").length == 0){
+                secondDiv.appendChild(deleteAllButton);
+        }else if(document.getElementsByClassName(`item`).length != 0
+            && document.getElementsByClassName("delete-all").length != 0){
+                document.getElementById("delete-all").style.visibility = "visible";
+        }else{
+            document.getElementById("delete-all").style.visibility = "hidden";
+        }        
+    }
+
+    deleteAllDiv.onclick = function() {
+        for(let i = document.getElementsByClassName(`item`).length - 1; i >= 0; i--){
+            let element = document.getElementsByClassName(`item`)[i]
+            element.parentElement.removeChild(element)
+        }
+        deleteAll()
+    }
+
+    child.onclick = function () {
+      this.parentElement.parentElement.removeChild(this.parentElement)
+      this.parentElement.removeChild(this);
+      deleteAll();
+    };
+
+    function setAttributes(element, attributes) {
+        for(var key in attributes) {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+  }
+  </script>
+
+
+  <title>HW8</title>
+</head>
+<body>
+  <form action="javascript:void(0);" method="post" id="form">
+    <input type="text" id="value-input" placeholder="Write..." required autofocus />
+    <button type="submit" onclick="myFunction()">OK</button>
+  </form>
+  <div class="first-div" id="first-div"></div>
+  <div class="second-div" id="second-div"></div>
+</body>
+</html>
