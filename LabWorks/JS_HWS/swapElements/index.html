@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="stylesheet" href="./index.css">
+
+        <title>Homework**</title>
+
+  <script>
+  function changePositions(option) {
+    let elements = [];
+
+    for(let i = 1; i < 4; i ++){
+        elements.push(document.getElementById(`image container`).children[i]); 
+    }
+
+    if(option === 'right'){
+       for(let i = 0; i < elements.length - 1; i++){
+        changePositions('left')
+       }
+    }else if(option === 'left') {
+        swapDiv(elements[elements.length-1])
+        
+        if(elements[elements.length-1] instanceof HTMLScriptElement){
+            changePositions('left')
+        }
+    }
+  }
+
+  function swapDiv(elem) {
+        elem.parentNode.insertBefore(elem, elem.parentNode.firstChild);
+  }
+
+  function setAttributes(element, attributes) {
+        for(var key in attributes) {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+  </script>
+	</head>
+
+    <body>
+
+        <form action="javascript:void(0);" method="post" id="form">
+            <div class="images">
+                <div class="page title">
+                    <div>
+                        <p>BLOG</p>
+                    </div>
+                    <div class="normal">
+                        <p>Read our newest blog<br>post right away</p>
+                    </div>
+                </div>
+                <div class="arrow"  onclick="changePositions('right')">
+                    <img id="leftArrow" src="./img/left.svg" alt="left arrow">
+                </div>
+                <div class="image container" id = "image container">
+                    <script>
+                        let imagesDiv = document.getElementById("image container");
+                        let image, concreteDiv, textElement, breakElement;
+                        let dataTexts = [["FOOD AND LIFE", "Succeed in hotel business", "Fresh food directly from our restaurant ready cooked for you"],
+                                         ["COOKING", "Cooking delicious food", "Fresh food directly from our restaurant ready cooked for you"],
+                                         ["FRUITS", "Getting fresh fruits", "Fresh food directly from our restaurant ready cooked for you"],
+                                         ["title",  "description", "text"]];
+                        
+                        for(let i = 1; i < 4; i++){
+                            concreteDiv = document.createElement(`div`);
+                            image = document.createElement("img");
+
+                            setAttributes(concreteDiv, {'class': `imageDiv ${i}`, 'id': `imageDiv ${i}`});
+                            setAttributes(image, {'src': `./img/image${i}.png`, "alt": `image ${i}`});
+                            
+                            concreteDiv.appendChild(image);
+                            imagesDiv.appendChild(concreteDiv);
+
+                            for(let j = 0; j < dataTexts[i - 1].length; j++){
+                                textElement = document.createElement("span");
+                                breakElement = document.createElement("br");
+                                
+                                setAttributes(textElement, {'class': `${dataTexts[3][j]} ${i}_${j}`});
+
+                                textElement.innerHTML = dataTexts[i - 1][j];
+                                textElement.appendChild(breakElement);
+                                concreteDiv.appendChild(textElement);
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="arrow"  onclick="changePositions('left')">
+                    <img id="rightArrow" src="./img/right.svg" alt="right arrow">
+                </div>
+            </div> 
+        </form>
+    </body>
+</html>

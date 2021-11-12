@@ -1,0 +1,98 @@
+*{
+  font-family: 'Raleway';
+  font-weight: 900;
+}
+
+.page.title{
+  grid-column: 2 / span 4;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #5863F8;
+}
+
+.page.title .normal{
+  font-size: 42px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 14px;
+  color: #5863F8;
+  font-weight: bolder;
+}
+
+.description{
+  font-size: 18px;
+}
+
+.text{
+  font-size: 14px;
+}
+
+.images,
+.image.container{
+  display: grid;
+  padding: 20px;
+}
+
+
+body{
+  background-color: rgb(236, 235, 235);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.images{
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(190, 190, 190);
+  width: 90%;
+  height: 580px;
+  margin-left: 70px;
+  background-color: white;
+  padding-bottom: 55px;
+}
+
+
+.image.container{
+  grid-gap: 23px;
+  grid-template-columns: auto auto auto;
+}
+
+.image.container img{
+  grid-gap: 23px;
+  justify-content: center;
+  grid-column: span 1;
+}
+
+.imageDiv{
+    background-color: rgb(236, 235, 235);
+    width: 353px;
+}
+
+span{
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  align-self: center;
+  line-height: normal;
+  width: 54%;
+  margin-left: 24%;
+  margin-top: 10px;
+}
+
+.arrow img{
+  width: 69px;
+  margin-top: 40px;
+}
+
+#leftArrow{
+  padding-left: 100px;
+}
+
+#rightArrow{
+  padding-left: 40px;
+}
