@@ -45,9 +45,7 @@
 	</head>
 
     <body>
-
-        <form action="javascript:void(0);" method="post" id="form">
-            <div class="images">
+        <form class ="images" action="javascript:void(0);" method="post" id="form">
                 <div class="page title">
                     <div>
                         <p>BLOG</p>
@@ -61,12 +59,14 @@
                 </div>
                 <div class="image container" id = "image container">
                     <script>
-                        let imagesDiv = document.getElementById("image container");
+                        let dataTexts = {
+                            "title": ["FOOD AND LIFE", "COOKING", "FRUITS"],
+                            "description": ["Succeed in hotel business", "Cooking delicious food", "Getting fresh fruits"],
+                            "text": ["Fresh food directly from our restaurant ready cooked for you"]
+                        }
+
                         let image, concreteDiv, textElement, breakElement;
-                        let dataTexts = [["FOOD AND LIFE", "Succeed in hotel business", "Fresh food directly from our restaurant ready cooked for you"],
-                                         ["COOKING", "Cooking delicious food", "Fresh food directly from our restaurant ready cooked for you"],
-                                         ["FRUITS", "Getting fresh fruits", "Fresh food directly from our restaurant ready cooked for you"],
-                                         ["title",  "description", "text"]];
+                        let imagesDiv = document.getElementById("image container");
                         
                         for(let i = 1; i < 4; i++){
                             concreteDiv = document.createElement(`div`);
@@ -78,23 +78,28 @@
                             concreteDiv.appendChild(image);
                             imagesDiv.appendChild(concreteDiv);
 
-                            for(let j = 0; j < dataTexts[i - 1].length; j++){
+                            for(let j = 0; j < Object.keys(dataTexts).length; j++){
                                 textElement = document.createElement("span");
                                 breakElement = document.createElement("br");
-                                
-                                setAttributes(textElement, {'class': `${dataTexts[3][j]} ${i}_${j}`});
-
-                                textElement.innerHTML = dataTexts[i - 1][j];
+                                setAttributes(textElement, {'class': `${Object.keys(dataTexts)[j]} ${i}_${j}`});
+                                textElement.innerHTML = checkElement(dataTexts[Object.keys(dataTexts)], i, j);
                                 textElement.appendChild(breakElement);
                                 concreteDiv.appendChild(textElement);
                             }
+                            
+                        }
+
+                        function checkElement(dictionary, i, j){
+                            if(dataTexts[Object.keys(dataTexts)[j]][i - 1] === undefined){
+                                return dataTexts[Object.keys(dataTexts)[j]][0];
+                            } else return dataTexts[Object.keys(dataTexts)[j]][i - 1];
+                            
                         }
                     </script>
                 </div>
                 <div class="arrow"  onclick="changePositions('left')">
                     <img id="rightArrow" src="./img/right.svg" alt="right arrow">
-                </div>
-            </div> 
+                </div>   
         </form>
     </body>
 </html>

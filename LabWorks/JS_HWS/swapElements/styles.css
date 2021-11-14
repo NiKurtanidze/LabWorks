@@ -15,6 +15,7 @@
   font-size: 42px;
   color: black;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .title{
@@ -49,9 +50,9 @@ body{
   border-style: solid;
   border-width: 3px;
   border-color: rgb(190, 190, 190);
-  width: 90%;
+  width: 85%;
   height: 580px;
-  margin-left: 70px;
+  margin-left: 115px;
   background-color: white;
   padding-bottom: 55px;
 }
