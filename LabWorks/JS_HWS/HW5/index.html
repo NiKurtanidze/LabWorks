@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+<div class="container">
+        <form id="sign-up">
+                <h1>Sign up</h1>
+                <input class="form-input" id = "name-sign-up" type="text" placeholder="Name..." required />
+                <input class="form-input" id = "email-sign-up" type="email" placeholder="Email..." required/>
+                <input 
+                class="form-input" 
+                id="password-sign-up"
+                type="password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                placeholder="Password..."
+                autocomplete="on" 
+                required
+                />
+
+                <button 
+                type="submit" 
+                class="form-button js-signUp" 
+                onclick="signUp()"
+            >
+            Sign Up
+            </button>
+        </form>
+    <form id ="sign-in">
+        <h1>Sign in</h1>
+        <input 
+        class="form-input signInEmail" 
+        id = "mail"
+        type="email" 
+        placeholder="Email..." 
+        required
+    />
+    <input 
+        class="form-input signInPass" 
+        id = "password"
+        type="password" 
+        placeholder="Password..." 
+        autocomplete="on" 
+        required
+    />
+    <button 
+        type="button" 
+        class="form-button js-signIn" 
+        onclick="login()"
+    >
+    Sign In
+    </button>
+    </form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+      const firebaseConfig = {
+    apiKey: "AIzaSyDzXe2lAsS-ZxIAcnW5LDdY_8Z8kaommq8",
+    authDomain: "smtt-a452d.firebaseapp.com",
+    projectId: "smtt-a452d",
+    storageBucket: "smtt-a452d.appspot.com",
+    messagingSenderId: "1043392084072",
+    appId: "1:1043392084072:web:bc65281988434e04b3a3dd"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  
+    </script>
+    <script src="./index.js"></script>
+  </body>
+
+</html>

@@ -14,13 +14,13 @@ const signUp = () => {
      const rePass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/
     
      if ( reEmail.test(String(signUpEmail)) && rePass.test(String(signUpPassword))) {
-         if(localStorage.length === 0) id = 1
-         else id = JSON.parse(localStorage.getItem(localStorage.key(localStorage.length - 1))).id + 1;
+        if(localStorage.length === 0) id = 1
+        else id = JSON.parse(localStorage.getItem(localStorage.key(localStorage.length - 1))).id + 1;
         var user = {
-            'name': signUpName,
-            'email': signUpEmail,
-            'password': signUpPassword,
-            'id': id
+          'name': signUpName,
+          'email': signUpEmail,
+          'password': signUpPassword,
+          'id': id
         }
         localStorage.setItem('user' + id, JSON.stringify(user))
      }
