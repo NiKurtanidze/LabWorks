@@ -1,13 +1,13 @@
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-console.log("user is signed in")
-  } else {
-    console.log("no one is logged")
-  }
-});
-
 function login(){
 
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+  console.log("user is signed in")
+    } else {
+      console.log("no one is logged")
+    }
+  });
+  
   var userEmail = document.getElementById("mail").value
   var userPass = document.getElementById("password").value
 
