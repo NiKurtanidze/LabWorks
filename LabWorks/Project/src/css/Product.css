@@ -1,0 +1,169 @@
+.product-container{
+    position: relative;
+    top: 168px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item-view{
+    width: 656px;
+    height: 485px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 3px #00000029;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    left: 100px;
+}
+
+.item-view img{
+    position: relative;
+    top: 60px;
+    left: 200px;
+    min-width: 150px;
+    min-height: 300px;
+    max-width: 250px;
+    max-height: 400px;
+}
+
+.item-information{
+    width: 520px;
+    text-align: left;
+letter-spacing: NaNpx;
+}
+
+.product{
+    min-height: 830px;
+}
+
+.item-title{
+    width: 300px;
+height: 25px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 22px/37px BPG Excelsior Caps DejaVu 2010;
+letter-spacing: 0px;
+color: #6A6A68;
+}
+
+.item-price{
+    margin-top: 80px;
+    width: 125px;
+height: 25px;
+text-align: left;
+font: normal normal normal 22px/25px BPG;
+letter-spacing: 0px;
+color: #EA3339;
+}
+
+.item-description{
+    width: 700px;
+max-height: 500px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 20px/45px FiraGO;
+letter-spacing: 0px;
+color: #6A6A68;
+
+}
+
+.quantity{
+    position: relative;
+    width: 89px;
+height: 44px;
+/* UI Properties */
+border: 1px solid #EA3339;
+border-radius: 10px;
+text-align: center;
+background-color: #F4F2F0;
+}
+
+.buttons-item{
+    margin-top: 33px;
+}
+
+.add-to-cart{
+    width: 317px;
+height: 62px;
+border: 1px solid #EA3339;
+border-radius: 15px;
+margin: 0;
+padding-bottom: 11px;
+}
+
+.add-to-favorites{
+    width: 81px;
+height: 62px;
+background: #bfbfbf 0% 0% no-repeat padding-box;
+border: 1px solid #bfbfbf;
+border-radius: 15px;
+margin-left: 20px;
+position: relative;
+top: 11px;
+}
+
+.add-to-favorites.chosen{
+    background: #EA3339 0% 0% no-repeat padding-box;
+    border: 1px solid #EA3339; 
+}
+
+.add-to-favorites:hover{
+    width: 81px;
+height: 62px;
+background: #d47373 0% 0% no-repeat padding-box;
+border: 1px solid #d47373;
+}
+
+.add-to-favorites img{
+    width: 28px;
+height: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    font-size: 12px;
+}
+
+.modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
+
+.modal > .content { 
+    width: 100%;
+    padding: 10px 5px;
+}
+
+.modal > .actions {
+        width: 100%;
+        padding: 10px 5px;
+        margin: auto;
+        text-align: center;
+}
+
+.modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px; 
+    right: -10px; 
+    top: -10px; 
+    font-size: 24px; 
+    background: #ffffff; 
+    border-radius: 18px; 
+    border: 1px solid #cfcece;
+}

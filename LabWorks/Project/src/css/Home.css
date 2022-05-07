@@ -1,0 +1,334 @@
+
+.banner{
+    top: 169px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    background: transparent url('../images/banner.jpg') 0% 0% no-repeat padding-box;
+}
+
+.text-over-img{
+    position: absolute;
+    top: 292px;
+    left: 90px;
+    width: 564px;
+    height: 147px;
+    text-align: left;
+    font-size: 42px;
+    letter-spacing: 0px;
+    color: #3B4040;
+    text-shadow: 0px 3px 6px #00000031;
+}
+
+.learn-more{
+    position: absolute;
+    top: 470px;
+    left: 90px;
+    width: 205px;
+    height: 54px;
+    background: #FFFFFF21 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    opacity: 1;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.promotions{
+    top: 782px;
+    left: 92px;
+    width: 1500px;
+    height: 440px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 5px 5px 100px;
+}
+
+.promotion-elements{
+    top: 782px;
+    left: 92px;
+    width: 420px;
+    height: 281px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 5px #00000029;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promotion-elements img{
+    width: 120px;
+    height: 100px;
+}
+
+.title{
+    letter-spacing: 0px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.description{
+    letter-spacing: 0px;
+color: #6A6A68;
+top: 949px;
+padding-left: 100px;
+width: 361px;
+}
+
+.leaders{
+    position: inherit;
+    width: 1400px;
+    margin-left: 70px;
+    height: 600px;
+}
+
+.leader-heading{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+h1{
+    margin-right: 700px;
+}
+
+.arrows{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.product-paging-left{
+    margin-left: 10px;
+}
+
+.product-paging-right{
+    margin-right: 10px;
+}
+
+.leader-product{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.leader-product-item{
+    top: 1244px;
+    left: 89px;
+    width: 340px;
+    height: 360px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 5px #0000000D;
+    border-radius: 10px;
+}
+
+.sales{
+    position: inherit;
+    width: 1400px;
+    margin-left: 60px;
+    height: 600px;
+}
+
+.sales-items{
+display: grid;
+grid-template-columns: auto auto auto auto;
+column-gap: 20px;
+}
+
+.buyItem-leader:hover{
+    background-color: rgba(234, 51, 57, 1);
+    color: white;
+}
+
+.sale-item{
+    width: 340px;
+    height: 370px;
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.sales-items img{
+    width: 340px;
+height: 220px;
+}
+
+.current-sales{
+    width: 200px;
+height: 25px;
+margin: 0;
+float: left;
+font: normal normal normal 22px/30px BPG;
+}
+
+.all-sales{
+text-align: left;
+letter-spacing: 0px;
+color: rgba(214, 214, 214, 1);
+margin-bottom: 30px;
+margin-left: 250px;
+font: normal normal normal 22px/30px BPG;
+}
+
+.till-date{
+    width: 107px;
+    height: 17px;
+    text-align: left;
+    font: normal normal bold 14px/17px FiraGO;
+    letter-spacing: 0px;
+    color: rgba(234, 51, 57, 1);
+    margin-left: 15px;
+}
+
+.sale-description{
+    width: 280px;
+    height: 81px;
+    text-align: left;
+    font: normal normal normal 16px/24px FiraGO;
+    letter-spacing: -0.4px;
+    color: rgba(106, 106, 104, 1);
+    margin-left: 15px;
+}
+  
+.catalog{
+    position: inherit;
+    width: 1200px;
+    margin-left: 50px;
+    height: 700px;
+}
+
+.catalog-items{
+    display: grid;
+grid-template-columns: auto auto auto auto auto;
+row-gap: 8px;
+column-gap: 8px;
+width: 1130px;
+}
+
+.catalog-item{
+    width: 277px;
+    height: 277px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.catalog-item img{
+    width: 109px;
+    height: 112px;
+    margin-top: 60px;
+}
+
+.catalog-item p{
+    height: 24px;
+    letter-spacing: 0px;
+    color: #6A6A68;
+}
+
+.catalog-title{
+    width: 282px;
+    height: 25px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #305361;
+}
+
+.iphone{
+    width: 800px;
+height: 600px;
+margin-left: 220px;
+margin-top: 100px;
+}
+
+.application-text{
+    left: 900px;
+    width: 464px;
+height: 316px;
+margin-top: 250px;
+position: absolute;
+}
+
+.prod-img-leader{
+    width: 100px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 120px;
+    object-fit: contain;
+  }
+  
+  .favorite-leader{
+    width: 30px;
+    margin-left: 50px;
+    position: absolute;
+    top: 1310px;
+  }
+
+  .leader-stars{
+    position: absolute;
+    top: 1310px;
+    width: 90px;
+    margin-left: 25px;
+    height: 15px;
+  }
+
+  .product-title-leader{
+    text-align: left;
+  letter-spacing: 0px;
+  color: rgba(46, 42, 42, 1);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  height: 20px;
+  }
+  
+  .text-center-leader{
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  
+  .product-description-leader{
+    width: 273px;
+  height: 55px;
+  margin: 0;
+  text-align: left;
+  font: normal normal normal 18px/24px FiraGO;
+  letter-spacing: -0.45px;
+  color: rgba(106, 106, 104, 1);
+  }
+  
+  .price-leader{
+    width: 120px;
+  height: 28px;
+  margin: 0;
+  text-align: left;
+  font: normal normal normal 24px/28px FiraGO;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 1);
+  margin-right: 60px;
+  }
+
+  .buyItem-leader{
+    width: 130px;
+  height: 40px;
+    background: rgba(234, 51, 57, 0.01) 0% 0% no-repeat padding-box;
+    border: 1px solid rgba(233, 51, 56, 1);
+    border-radius: 15px;
+    float: right;
+    font: normal normal normal 13px/17px BPG;
+    letter-spacing: 0px;
+    color: #323236;
+    text-transform: uppercase;
+  }
+  
+  .price-to-buy-leader{
+    display: inline-block;
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .product-item-box{
+    width: 340px;
+    height: 360px;
+    background: rgba(255, 255, 255, 1) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }

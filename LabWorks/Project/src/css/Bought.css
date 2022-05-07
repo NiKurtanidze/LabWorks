@@ -1,0 +1,91 @@
+.bought{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    margin-top: 2px;
+}
+
+.bought-condition{
+    width: 300px;
+    margin-right: 0;
+    position: relative;
+    top: 82px;
+    left: 542px;
+}
+
+.bought-condition h5{
+    width: 461px;
+    height: 34px;
+    text-align: center;
+    font: normal normal normal 18px BPG;
+    letter-spacing: 0px;
+    color: #27242C;
+}
+
+.statement{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 300px;
+    font: normal normal normal 20px BPG;
+    letter-spacing: 0px;
+    color: #EA3339;
+    margin-left: 60px;
+}
+
+.check-box{
+    margin-top: 32px;
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+}
+
+.details-title{
+    position: relative;
+    top: 62px;
+    left: 60px;
+    width: 330px;
+    height: 34px;
+    text-align: center;
+    font: normal normal normal 18px/22px BPG;
+    letter-spacing: 0px;
+    color: #27242C;
+}
+
+.details-info{
+    position: relative;
+    top: 73px;
+    left: -57px;
+    width: 577px;
+height: 171px;
+padding: 45px;
+background: #FAFAFA 0% 0% no-repeat padding-box;
+display: grid;
+grid-template-columns: auto auto;
+}
+
+.total-amount{
+    text-align: center;
+    font: normal normal normal 18px/22px BPG;
+    letter-spacing: 0px;
+    color: #27242C;
+}
+
+.working-time{
+    position: absolute;
+    top: 1002px;
+left: 88px;
+width: 1298px;
+height: 102px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+text-align: left;
+font: normal normal normal 22px/27px FiraGO;
+letter-spacing: 0px;
+color: #7D8078;
+}
+
+.amount{
+    color: #EA3339;
+    font: normal normal normal 18px/22px BPG;
+}
